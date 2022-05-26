@@ -4,13 +4,13 @@ let z = x + y;     // assign the value 7 to z (5 + 2)
 
 // The assignment operator (=) assigns a value to a variable.
 
-let x = 10; 
+let x1 = 10; 
 
 // The addition operator (+) adds numbers:
 
-let x = 5;
-let y = 2;
-let z = x + y;
+let x2 = 5;
+let y1 = 2;
+let z1 = x + y;
 
 /*
 Operators and Operands
@@ -23,5 +23,43 @@ Operand 	    Operator 	    Operand
 
 
 */
+
+var LEFT = document.getElementById("left"),
+RIGHT = document.getElementById("right"),
+RESULT = document.getElementById("result"),
+OPRTR = document.getElementById("operator"),
+ADD = document.getElementById("add"),
+SUB = document.getElementById("sub"),
+MUL = document.getElementById("mul"),
+DIV = document.getElementById("div"),
+MOD = document.getElementById("mod");
+
+ADD.addEventListener("click", function(){
+    RESULT.innerHTML = parseInt(LEFT.value) + parseInt(RIGHT.value);
+    OPRTR.innerHTML = "+";
+})
+
+SUB.addEventListener("click", function(){
+    RESULT.innerHTML = parseInt(LEFT.value) - parseInt(RIGHT.value);
+    OPRTR.innerHTML = "-";
+})
+
+MUL.addEventListener("click", function(){
+    RESULT.innerHTML = parseInt(LEFT.value) * parseInt(RIGHT.value);
+    OPRTR.innerHTML = "*";
+})
+
+DIV.addEventListener("click", function(){
+    RESULT.innerHTML = parseInt(LEFT.value) / parseInt(RIGHT.value);
+    OPRTR.innerHTML = "÷";
+})
+
+MOD.addEventListener("click", function(){
+    RESULT.innerHTML = parseInt(LEFT.value) % parseInt(RIGHT.value);
+    OPRTR.innerHTML = "%";
+})
+
+
+
 
 

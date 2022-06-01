@@ -1,6 +1,7 @@
 /*
 
-In programming, type conversion is the process of converting data of one type to another. For example: converting String data to Number.
+In programming, type conversion is the process of converting data of one type to another. 
+For example: converting String data to Number.
 
 There are two types of type conversion in JavaScript.
 
@@ -70,7 +71,7 @@ console.log(result); // 4
 //Note: JavaScript considers 0 as false and all non-zero number as true. And, 
 // if true is converted to a number, the result is always 1.
 
-//Example 5: null Conversion to Number
+// Example 5: null Conversion to Number
 // null is 0 when used with number
 result = 4 + null;
 console.log(result);  // 4
@@ -78,7 +79,7 @@ console.log(result);  // 4
 result = 4 - null;
 console.log(result);  // 4
 
-//Example 6: undefined used with number, boolean or null
+// Example 6: undefined used with number, boolean or null
 // Arithmetic operation of undefined with number, boolean or null gives NaN
 result = 4 + undefined;
 console.log(result);  // NaN
@@ -180,6 +181,9 @@ console.log(result); // "324"
 
 result = true.toString();
 console.log(result); // "true"
+
+result = null.toString();
+console.log(result); //  get an error
 
 //Note: String() takes null and undefined and converts them to string. 
 //However, toString() gives error when null are passed.

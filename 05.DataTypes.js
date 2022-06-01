@@ -8,13 +8,13 @@ let amIMarries = true; // boolean
 let car; // undefined
 
 
-console.log(typeof myName);
-console.log(typeof age);
-console.log(typeof fullName);
-console.log(typeof mobiles);
-console.log(Array.isArray(mobiles));
-console.log(typeof amIMarries);
-console.log(typeof car);
+console.log(typeof myName); // string
+console.log(typeof age); // number
+console.log(typeof fullName); // object
+console.log(typeof mobiles); // object
+console.log(Array.isArray(mobiles)); // true
+console.log(typeof amIMarries); //boolean
+console.log(typeof car); // undefined
 
 
 //JavaScript Types are Dynamic
@@ -25,3 +25,4 @@ console.log(typeof car);
 let x;           // Now x is undefined
 x = 5;           // Now x is a Number
 x = "John";      // Now x is a String
+console.log(x);  // John

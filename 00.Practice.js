@@ -6,7 +6,9 @@ SQR_VALUE = document.getElementById("sqr_value"),
 CUB_VALUE = document.getElementById("cub_value"),
 SQR_RESULT = document.getElementById("sqr_result"),
 CUB_RESULT = document.getElementById("cub_result"),
-ERR_MSG = document.getElementById("error_msg");
+ERR_MSG = document.getElementById("error_msg"),
+REM_VALUE = document.getElementById("rem_value"),
+REM_RESULT = document.getElementById("rem_result");
 
 ERR_MSG.style.visibility = 'hidden';
 
@@ -20,13 +22,20 @@ SQR_VALUE.addEventListener("input", function(){
 });
 
 CUB_VALUE.addEventListener("input", function(){
-    CUB_RESULT.innerHTML = CUB_VALUE.value * CUB_VALUE.value * CUB_VALUE.value;
+    return CUB_RESULT.innerHTML = CUB_VALUE.value * CUB_VALUE.value * CUB_VALUE.value;
 });
 
 SQRT_VALUE.addEventListener("input", function(){
-    SQRT_RESULT.innerHTML = Math.sqrt(SQRT_VALUE.value);
+    return SQRT_RESULT.innerHTML = Math.sqrt(SQRT_VALUE.value);
 });
 
 CBRT_VALUE.addEventListener("input", function(){
-    CBRT_RESULT.innerHTML = Math.cbrt(CBRT_VALUE.value);
+    return CBRT_RESULT.innerHTML = Math.cbrt(CBRT_VALUE.value);
 });
+
+REM_VALUE.addEventListener("input", function(){
+    return REM_RESULT.innerHTML = REM_VALUE.value * 16;
+});
+
+
+

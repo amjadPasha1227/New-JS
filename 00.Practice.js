@@ -8,14 +8,14 @@ SQR_RESULT = document.getElementById("sqr_result"),
 CUB_RESULT = document.getElementById("cub_result"),
 ERR_MSG = document.getElementById("error_msg");
 
-ERR_MSG.style.display = 'none';
+ERR_MSG.style.visibility = 'hidden';
 
 SQR_VALUE.addEventListener("input", function(){
     if(!isNaN(SQR_VALUE.value)){
-        ERR_MSG.style.display = 'none';
+        ERR_MSG.style.visibility = 'hidden';
         return SQR_RESULT.innerHTML = SQR_VALUE.value * SQR_VALUE.value;
     }else{
-        ERR_MSG.style.display = 'inline-block';
+        ERR_MSG.style.visibility = 'visible';
     }
 });
 

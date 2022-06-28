@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <title>JS Classes</title>
     <style>
         /* *{
@@ -39,9 +42,23 @@
             width: 100px;
 
         } */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .time_wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+            font-family: 'Share Tech Mono', monospace;
+        }
     </style>
 </head>
-<body>
+<body onload="realTimeClock()">
     
     <!-- <div class="wrapper">
         <div class="left-input">
@@ -64,14 +81,14 @@
     <div id="result"></div> -->
 
           
-    <div>
+    <!-- <div>
         <span><strong>Square of </strong></span><input type="text" id="sqr_value" style="width: 60px;"> = <span id="sqr_result">0</span>
         <p id="error_msg" style="color: red;font-size:12px;margin: 0;">Please Enter Number Only</p>
     </div>
     <br>
     <div>
         <span><strong>Cube of </strong></span><input type="text" id="cub_value" style="width: 60px;"> = <span id="cub_result">0</span>
-        <!-- <span class="error_msg" style="color: red;font-size:12px;">Please Enter Number Only</span> -->
+        <span class="error_msg" style="color: red;font-size:12px;">Please Enter Number Only</span>
     </div>
         
     <br/>
@@ -95,7 +112,14 @@
         <input type="text" id="table_value" style="width: 60px;">
         <button id="getTable">Get Table</button>
         <div id="table_result"></div>
+    </div> -->
+
+
+    <div class="time_wrapper">
+        <span id="date" class="dateDay"></span><span id="day" class="dateDay"></span>
+        <span id="hours" class="time"></span>:<span id="minutes" class="time"></span>:<span id="seconds" class="time"></span>
     </div>
+
 
     <!-- <script src="01.Hello-world.js"></script> -->
     <!-- <script src="02.Statements_and_Syntax.js"></script> -->
@@ -111,6 +135,7 @@
     <!-- <script src="10.Conditional_Statement.js"></script> -->
     <!-- <script src="11.loop.js"></script> -->
     <!-- <script src="Practice_or_Tasks/03.loop_Task_Decrement_Value.js"></script> -->
-    <script src="Practice_or_Tasks/04.pyramid_pattern.js"></script>
+    <!-- <script src="Practice_or_Tasks/04.pyramid_pattern.js"></script> -->
+    <script src="Practice_or_Tasks/05.DateandTimeDisplay.js"></script>
 </body>
 </html>

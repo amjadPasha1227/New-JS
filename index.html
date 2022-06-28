@@ -50,6 +50,7 @@
 
         .time_wrapper{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -116,8 +117,9 @@
 
 
     <div class="time_wrapper">
-        <span id="date" class="dateDay"></span><span id="day" class="dateDay"></span>
-        <span id="hours" class="time"></span>:<span id="minutes" class="time"></span>:<span id="seconds" class="time"></span>
+        <div><span id="date" class="date"></span>-<span id="month" class="date"></span>-<span id="year" class="date"></span></div>
+        <div><span id="day" class="day"></span></div>
+        <div><span id="hours" class="time"></span>:<span id="minutes" class="time"></span>:<span id="seconds" class="time"></span></div>
     </div>
 
 

@@ -56,7 +56,19 @@
             height: 100vh;
             background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
             font-family: 'Share Tech Mono', monospace;
+            color: #fff;
         }
+
+        .date{
+            font-size: 40px;
+        }
+        .day{
+            font-size: 60px;
+        }
+        .time{
+            font-size: 50px;
+        }
+
     </style>
 </head>
 <body onload="realTimeClock()">
@@ -117,9 +129,9 @@
 
 
     <div class="time_wrapper">
-        <div><span id="date" class="date"></span>-<span id="month" class="date"></span>-<span id="year" class="date"></span></div>
+        <div><span id="date" class="date"></span><span class="date">-</span><span id="month" class="date"></span><span class="date">-</span><span id="year" class="date"></span></div>
         <div><span id="day" class="day"></span></div>
-        <div><span id="hours" class="time"></span>:<span id="minutes" class="time"></span>:<span id="seconds" class="time"></span></div>
+        <div><span id="hours" class="time"></span><span class="time">:</span><span id="minutes" class="time"></span><span class="time">:</span><span id="seconds" class="time"></span> <span id="amorpm"></span></div>
     </div>
 
 

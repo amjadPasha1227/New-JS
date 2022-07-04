@@ -8,6 +8,22 @@ console.log(x);
     code to be executed
 }
 */
+
+//////////////////////////////////////
+
+/* 
+
+0 <
+1 <=
+
+i++ is similar to i = i + 1;
+
+*/
+
+/////////////////////////////////////
+
+
+
 for(let i=1; i<=3; i++){
     console.log("Increment Value " + i);
 }

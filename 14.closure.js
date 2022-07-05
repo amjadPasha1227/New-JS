@@ -30,3 +30,17 @@ console.log(plus());
 
 // Defination: a closure gives you access to an outer function's scope from an inner function.
 // In JavaScript, closures are created every time a function is created, at function creation time.
+
+// Example from geeksforgeeks
+
+// function initaccount() {
+//     var balance = 1000;
+
+//     function currentbalance() {
+//         balance = balance - 100;
+//         alert(balance);
+//     }
+//     currentbalance();
+// }
+
+// initaccount()

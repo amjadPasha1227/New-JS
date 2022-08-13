@@ -2,7 +2,7 @@ let x = 3;
 x++;
 console.log(x);
 
-/*1. or loop
+/*1. for loop
  syntax:
  for(initializer; condition; increment/decrement){
     code to be executed

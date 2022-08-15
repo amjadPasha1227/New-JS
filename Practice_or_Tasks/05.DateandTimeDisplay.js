@@ -76,6 +76,21 @@ switch (Month_list) {
     case 6:
         Month_list = "JUL"
         break;
+        case 7:
+        Month_list = "AUG"
+        break;
+        case 8:
+        Month_list = "SEP"
+        break;
+        case 9:
+        Month_list = "OCT"
+        break;
+        case 10:
+        Month_list = "NOV"
+        break;
+        case 10:
+        Month_list = "DEC"
+        break;
     default:
         break;
 }

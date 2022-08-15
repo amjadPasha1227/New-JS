@@ -8,7 +8,7 @@ if (true){
     console.log(age);
     console.log(myName2);
 }
-console.log(myName);
+console.log(myName); // Amjad
 console.log(myName2); // error
 console.log(age); // error
 

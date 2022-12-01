@@ -88,7 +88,7 @@ switch (Month_list) {
         case 10:
         Month_list = "NOV"
         break;
-        case 10:
+        case 11:
         Month_list = "DEC"
         break;
     default:

@@ -71,8 +71,8 @@
 
     </style>
 </head>
-<body onload="realTimeClock()">
-    
+<!-- <body onload="realTimeClock()"> -->
+<body>   
     <!-- <div class="wrapper">
         <div class="left-input">
             <input type="text" id="aaa"> px
@@ -128,10 +128,30 @@
     </div> -->
 
 
-    <div class="time_wrapper">
+    <!-- <div class="time_wrapper">
         <div><span id="date" class="date"></span><span class="date">-</span><span id="month" class="date"></span><span class="date">-</span><span id="year" class="date"></span></div>
         <div><span id="day" class="day"></span></div>
         <div><span id="hours" class="time"></span><span class="time">:</span><span id="minutes" class="time"></span><span class="time">:</span><span id="seconds" class="time"></span> <span id="amorpm"></span></div>
+    </div> -->
+    <!-- <button onclick="myFunction()">
+        Counter: <span id="counter">0</span>
+    </button> -->
+    <!-- <input id="inputValue">
+    <button onclick="myFunction()">
+        Get Table
+    </button>
+    <div id="table">
+
+    </div> -->
+    <select id="job_title">
+        <option value="teacher">Teacher</option>
+        <option value="it">IT</option>
+        <option value="other">Other</option>
+    </select>
+
+    <div id="otherJob" style="display: none">
+        <p>Enter Job Title</p>
+        <input type="text" id="input"/>
     </div>
 
 
@@ -150,11 +170,72 @@
     <!-- <script src="11.loop.js"></script> -->
     <!-- <script src="Practice_or_Tasks/03.loop_Task_Decrement_Value.js"></script> -->
     <!-- <script src="Practice_or_Tasks/04.pyramid_pattern.js"></script> -->
-    <script src="Practice_or_Tasks/05.DateandTimeDisplay.js"></script>
+    <!-- <script src="Practice_or_Tasks/05.DateandTimeDisplay.js"></script> -->
     <!-- <script src="Practice_or_Tasks/06.if(a).js"></script> -->
     <!-- <script src="12.scope.js"></script> -->
     <!-- <script src="13.nestedfunctionscope.js"></script> -->
     <!-- <script src="14.closure.js"></script> -->
     <!-- <script src="15.hoisting.js"></script> -->
+    <!-- <script>
+        // function for counter
+        var counter = 0;
+            console.log(counter)
+        function myFunction() {
+            counter += 1
+            console.log(counter)
+            document.getElementById("counter").innerHTML = counter;
+        }
+        myFunction();
+        console.log(counter)
+        myFunction();
+        console.log(counter)
+    </script> -->
+    
+    <script>
+        // var table = document.getElementById("table");
+        // function myFunction(){
+        //     var result = '';
+        //     for(let i=1; i<=5; i++){
+        //         for(let j=1; j<=5 - i; j++){
+        //             result = result + " ";
+        //         }
+        //         for(let k=0; k < 2 * i - 1; k++){
+        //             result = result + "*";
+        //         }
+        //         result =  result +  "</br>";
+        //     }
+        //     table.innerHTML = `<pre>${result}</pre>`;
+        //     console.log(result)
+        // }
+        // function myFunction(){
+        //     var inputValue = document.getElementById("inputValue");
+        //     var result = '';
+        //     if(inputValue.value == "" || isNaN(inputValue.value) || inputValue.value.indexOf(' ') >= 0){
+        //         table.innerHTML = "<p style='color:red'>Please Enter a Number to get a Table</p>"
+        //     }
+        //     else{
+        //         for(i=1; i<=10; i++){
+        //             result = result + "<p>" + inputValue.value + " * " + i + " = " +  inputValue.value * i + "</p>";
+        //         }
+        //         table.innerHTML = result;
+        //     }
+        // }
+
+        var job_title = document.getElementById("job_title");
+        var OJ = document.getElementById("otherJob");
+        var input = document.getElementById("input")
+        job_title.addEventListener("change", function change(e) {
+            //console.log(job_title.value)
+            if(job_title.value === "other"){
+                OJ.style.display = "block";
+            }
+            else{
+                OJ.style.display = "none";
+                //input.value == 1;s
+            }
+        })
+
+    </script>
+
 </body>
 </html>

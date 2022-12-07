@@ -221,20 +221,36 @@
         //     }
         // }
 
-        var job_title = document.getElementById("job_title");
-        var OJ = document.getElementById("otherJob");
-        var input = document.getElementById("input")
-        job_title.addEventListener("change", function change(e) {
-            //console.log(job_title.value)
-            if(job_title.value === "other"){
-                OJ.style.display = "block";
-            }
-            else{
-                OJ.style.display = "none";
-                //input.value == 1;s
-            }
-        })
+        // var job_title = document.getElementById("job_title");
+        // var OJ = document.getElementById("otherJob");
+        // var input = document.getElementById("input");
+        // job_title.addEventListener("change", function() {
+        //     console.log(job_title.value)
+        //     if(job_title.value === "other"){
+        //         OJ.style.display = "block";
+        //         input.value = "";
+        //     }
+        //     else{
+        //         OJ.style.display = "none";
+        //     }
+        // })
+        
+        
+        function countDown(number) {
 
+        // display the number
+        console.log(number);
+
+        // decrease the number value
+        const newNumber = number - 1;
+
+        // base case
+        if (newNumber > 0) {
+            countDown(newNumber);
+        }
+        }
+
+        countDown(4);
     </script>
 
 </body>

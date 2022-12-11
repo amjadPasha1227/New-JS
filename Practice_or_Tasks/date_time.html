@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
         /* *{
             padding: 0;
@@ -67,87 +68,13 @@
 
     </style>
 </head>
-<body>
-    <div class="wrapper">
-        <div class="left-input">
-            <input type="text" id="aaa"> px
-        </div>
-        <div><h1>=</h1></div>
-        <div class="right-input">
-            <input type="text" id="bbb"> rem
-        </div>
-    </div>
-
-    <input id="left"> <strong><span id="operator">+</span></strong>
-    <input id="right">
-    <button id="add">+</button>
-    <button id="sub">-</button>
-    <button id="mul">*</button>
-    <button id="div">÷</button>
-    <button id="mod">%</button>
-
-    <div id="result"></div>
-
-          
-    <div>
-        <span><strong>Square of </strong></span><input type="text" id="sqr_value" style="width: 60px;"> = <span id="sqr_result">0</span>
-        <p id="error_msg" style="color: red;font-size:12px;margin: 0;">Please Enter Number Only</p>
-    </div>
-    <br>
-    <div>
-        <span><strong>Cube of </strong></span><input type="text" id="cub_value" style="width: 60px;"> = <span id="cub_result">0</span>
-        <span class="error_msg" style="color: red;font-size:12px;">Please Enter Number Only</span>
-    </div>
-        
-    <br/>
-    <br/>
-    <div>
-        <span><strong>Square root of </strong></span><input type="text" id="sqrt_value" style="width: 60px;"> = <span id="sqrt_result">0</span>
-    </div>
-    <br/>
-    <br/>
-    <div>
-        <span><strong>Cube root of </strong></span><input type="text" id="cbrt_value" style="width: 60px;"> = <span id="cbrt_result">0</span>
-    </div>
-    <br/>
-    <br/>
-    <div>
-        <input type="text" id="rem_value" style="width: 60px;"><span><strong> rem </strong></span> = <span id="rem_result">0</span>px
-    </div>
-    <br/>
-    <div>
-        <span><strong> Table of an Integer</strong></span> =
-        <input type="text" id="table_value" style="width: 60px;">
-        <button id="getTable">Get Table</button>
-        <div id="table_result"></div>
-    </div>
-
-
+<body onload="realTimeClock()">
     <div class="time_wrapper">
         <div><span id="date" class="date"></span><span class="date">-</span><span id="month" class="date"></span><span class="date">-</span><span id="year" class="date"></span></div>
         <div><span id="day" class="day"></span></div>
         <div><span id="hours" class="time"></span><span class="time">:</span><span id="minutes" class="time"></span><span class="time">:</span><span id="seconds" class="time"></span> <span id="amorpm"></span></div>
-    </div>
-    <button onclick="myFunction()">
-        Counter: <span id="counter">0</span>
-    </button>
-    <!-- <!-- <input id="inputValue">
-    <button onclick="myFunction()">
-        Get Table
-    </button>
-    <div id="table"> -->
-
-    </div> -->
-    <select id="job_title">
-        <option value="teacher">Teacher</option>
-        <option value="it">IT</option>
-        <option value="other">Other</option>
-    </select>
-
-    <div id="otherJob" style="display: none">
-        <p>Enter Job Title</p>
-        <input type="text" id="input"/>
-    </div>
+    </div> 
+    
 
 
     <!-- <script src="01.Hello-world.js"></script> -->
@@ -165,113 +92,11 @@
     <!-- <script src="11.loop.js"></script> -->
     <!-- <script src="Practice_or_Tasks/03.loop_Task_Decrement_Value.js"></script> -->
     <!-- <script src="Practice_or_Tasks/04.pyramid_pattern.js"></script> -->
-    <!-- <script src="Practice_or_Tasks/05.DateandTimeDisplay.js"></script> -->
+    <script src="05.DateandTimeDisplay.js"></script>
     <!-- <script src="Practice_or_Tasks/06.if(a).js"></script> -->
     <!-- <script src="12.scope.js"></script> -->
     <!-- <script src="13.nestedfunctionscope.js"></script> -->
     <!-- <script src="14.closure.js"></script> -->
     <!-- <script src="15.hoisting.js"></script> -->
-    <!-- <script>
-        // function for counter
-        var counter = 0;
-            console.log(counter)
-        function myFunction() {
-            counter += 1
-            console.log(counter)
-            document.getElementById("counter").innerHTML = counter;
-        }
-        myFunction();
-        console.log(counter)
-        myFunction();
-        console.log(counter)
-    </script> -->
-    
-    <script>
-        // var table = document.getElementById("table");
-        // function myFunction(){
-        //     var result = '';
-        //     for(let i=1; i<=5; i++){
-        //         for(let j=1; j<=5 - i; j++){
-        //             result = result + " ";
-        //         }
-        //         for(let k=0; k < 2 * i - 1; k++){
-        //             result = result + "*";
-        //         }
-        //         result =  result +  "</br>";
-        //     }
-        //     table.innerHTML = `<pre>${result}</pre>`;
-        //     console.log(result)
-        // }
-        // function myFunction(){
-        //     var inputValue = document.getElementById("inputValue");
-        //     var result = '';
-        //     if(inputValue.value == "" || isNaN(inputValue.value) || inputValue.value.indexOf(' ') >= 0){
-        //         table.innerHTML = "<p style='color:red'>Please Enter a Number to get a Table</p>"
-        //     }
-        //     else{
-        //         for(i=1; i<=10; i++){
-        //             result = result + "<p>" + inputValue.value + " * " + i + " = " +  inputValue.value * i + "</p>";
-        //         }
-        //         table.innerHTML = result;
-        //     }
-        // }
-
-        // var job_title = document.getElementById("job_title");
-        // var OJ = document.getElementById("otherJob");
-        // var input = document.getElementById("input");
-        // job_title.addEventListener("change", function() {
-        //     console.log(job_title.value)
-        //     if(job_title.value === "other"){
-        //         OJ.style.display = "block";
-        //         input.value = "";
-        //     }
-        //     else{
-        //         OJ.style.display = "none";
-        //     }
-        // })
-        
-        
-        // function countDown(number) {
-
-        // // display the number
-        // console.log(number);
-
-        // // decrease the number value
-        // const newNumber = number - 1;
-
-        // // base case
-        // if (newNumber > 0) {
-        //     countDown(newNumber);
-        // }
-        // }
-
-        // countDown(4);
-        // var myName = "Amjad";
-        // function myFunction() {
-        //     var myName2 = "Amjad20202"
-        //     return myName2
-        // }
-        // let r = myFunction();
-        // console.log(r)
-
-
-
-        //JS Bootccamp
-        // console.log(typeof null);
-        // console.log(typeof typeof null);
-        // console.log(null == undefined);
-        // console.log(null === undefined);
-        // console.log(typeof NaN); 
-        // console.log(NaN === NaN);  
-        // console.log(NaN == NaN); 
-
-        let a = ["Math", "Sciene", function() {return "something"}];
-        b = a;
-        console.log(b)
-        console.log(a[2]())
-        
-
-    </script>
-
 </body>
 </html>

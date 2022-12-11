@@ -1,0 +1,27 @@
+<select id="job_title">
+    <option value="teacher">Teacher</option>
+    <option value="it">IT</option>
+    <option value="other">Other</option>
+</select>
+
+<div id="otherJob" style="display: none">
+    <p>Enter Job Title</p>
+    <input type="text" id="input"/>
+</div>
+
+
+<script>
+    var job_title = document.getElementById("job_title");
+        var OJ = document.getElementById("otherJob");
+        var input = document.getElementById("input");
+        job_title.addEventListener("change", function() {
+            console.log(job_title.value)
+            if(job_title.value === "other"){
+                OJ.style.display = "block";
+                input.value = "";
+            }
+            else{
+                OJ.style.display = "none";
+            }
+        })
+</script>

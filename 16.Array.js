@@ -56,7 +56,37 @@
 // create new array: concat, slice
 // pop - remove last item (reverse) shift - remove first item
 // push - add item to array at last (reverse) unshift: add to first place
-const newItems = ["item1", "item2", "item3"];
-console.log(newItems.toString());
-console.log(newItems.join());
+// const newItems = ["item1", "item2", "item3"];
+// console.log(newItems.toString());
+// console.log(newItems.join());
+// console.log(newItems.reverse());
 
+// const numbers = [5, 2, 1, 6, 10, 4, 9]
+// console.log(numbers.sort(
+//     function(a, b){
+//         return a - b;
+//     }
+// ))
+
+
+// Sorting array With for Loop
+// var input = [2,3,8,1,4,5,9,7,6];
+
+//    var output = [];
+//    var inserted;
+
+//    for (var i = 0, ii = input.length ; i < ii ; i++){
+//     inserted = false;
+//     for (var j = 0, jj = output.length ; j < jj ; j++){
+//       if (input[i] < output[j]){
+//         inserted = true;
+//         output.splice(j, 0, input[i]);
+//         break;
+//       }
+//     }
+    
+//     if (!inserted)
+//       output.push(input[i])
+//   }
+
+//   console.log(output);

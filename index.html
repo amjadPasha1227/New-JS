@@ -9,11 +9,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <title>JS Classes</title>
-    
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .list-wrapper{
+            text-align: center;
+            background: #eee;
+            padding: 30px;
+            width: 400px;
+            height: 100%;
+        }
+        .list-wrapper h2{
+            margin-bottom: 10px;
+        }
+        ul{
+            /* list-style: none; */
+            text-align: left;
+            padding: 10px;
+        }
+        /* li{
+            position: relative;
+            width: auto;
+        }
+        li:after{
+            content: "delete";
+            width: 100px;
+            height: auto;
+            font-size: 14px;
+            color: red;
+            position: absolute;
+            top: 2px;
+            margin-left: 5px;
+        } */
+    </style>
 </head>
 <body>  
-    <div id="app">
+    <!-- <div id="app">
         <button id="btn">Button</button>
+    </div> -->
+
+    
+    <div class="list-wrapper">
+        <h2>Todo List</h2>
+        <input type="text" id="todo-input">
+        <button id="add-btn">Add</button>
+        <div id="todo-list"></div>
     </div>
     
      <!-- <script src="01.Hello-world.js"></script> -->
@@ -40,6 +88,7 @@
     <!-- <script src="./dom/creareElement.js"></script> -->
     <!-- <script src="16.Array.js"></script> -->
     <!-- <script src="17.currying.js"></script> -->
-    <script src="18.this.js"></script>
+    <!-- <script src="18.this.js"></script> -->
+    <script src="Practice_or_Tasks/08.TodoList.js"></script>
 </body>
 </html>

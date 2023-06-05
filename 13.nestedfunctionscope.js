@@ -6,5 +6,5 @@ function outer(){
     }
     inner();
 }
-outer();
-inner();
+outer(); //Amjad Amjad
+inner(); // Error

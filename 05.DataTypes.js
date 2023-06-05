@@ -4,7 +4,7 @@ let myName = "Amjad"; // string
 let age = 30; // number
 let fullName = {firstName:"Amjadpasha", lastName:"Mahammad"}; // object
 let mobiles = ["realme", "mi"]; // array
-let amIMarries = true; // boolean
+let amIMarried = true; // boolean
 let car; // undefined
 
 
@@ -13,7 +13,7 @@ console.log(typeof age); // number
 console.log(typeof fullName); // object
 console.log(typeof mobiles); // object
 console.log(Array.isArray(mobiles)); // true
-console.log(typeof amIMarries); //boolean
+console.log(typeof amIMarried); //boolean
 console.log(typeof car); // undefined
 
 

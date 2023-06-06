@@ -56,8 +56,9 @@
         <button id="btn">Button</button>
     </div> -->
 
-    <input id="input" type="button" onclick="add()" value="0">
-    <button id="reset" onclick="reset()">Reset</button>
+    <!-- <input id="input" type="button" onclick="add()" value="0">
+    <button id="reset" onclick="reset()">Reset</button> -->
+    <input type="color" value="#272846" style="width:100px;">
     <!-- <div class="list-wrapper">
         <h2>Todo List</h2>
         <input type="text" id="todo-input">
@@ -153,12 +154,12 @@
                 
             // }
 
-            function add(){
-                let input = document.getElementById("input")
-                let counter2 = 0;
-                counter2 += 1;
-                input.value = counter2;
-            }
+            // function add(){
+            //     let input = document.getElementById("input")
+            //     let counter2 = 0;
+            //     counter2 += 1;
+            //     input.value = counter2;
+            // }
 
             // Call add() 3 times
             //console.log("The counter is: " + counter2);
@@ -168,6 +169,34 @@
             // console.log("The counter is: " + counter2);
             // add();
             // console.log("The counter is: " + counter2);
+
+
+            // var a = [8, 9, 11]
+
+            // for (var i=1; i<=a.length; i++){
+            //     if(a[i-1]%2==0){
+            //         console.log(a[i-1]);
+            //     }
+            // }
+
+            // const myStates = ['AP', 'TG', 'MH', 'KR', 'AS', 'RJ'];
+            // for (i=0; i<myStates.length; i++){
+            //     console.log(myStates[i]);
+            // }
+
+
+            // Sorting array With for Loop
+            var input = [2,3,8,1,4,5,9,7,6,10,20,11, 100];
+
+            input.sort(
+                function(a, b){return a - b}
+            );
+            input.reverse();
+            console.log(input);
+
+
+
+
     </script>
 </body>
 </html>

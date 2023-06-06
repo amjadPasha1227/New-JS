@@ -90,3 +90,12 @@
 //   }
 
 //   console.log(output);
+
+// simple sortinhg methods
+var input = [2,3,8,1,4,5,9,7,6,10,20,11, 100];
+
+input.sort(
+    function(a, b){return a - b}
+);
+input.reverse();
+console.log(input);

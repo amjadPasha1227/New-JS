@@ -56,7 +56,8 @@
         <button id="btn">Button</button>
     </div> -->
 
-    
+    <input id="input" type="button" onclick="add()" value="0">
+    <button id="reset" onclick="reset()">Reset</button>
     <!-- <div class="list-wrapper">
         <h2>Todo List</h2>
         <input type="text" id="todo-input">
@@ -90,6 +91,83 @@
     <!-- <script src="17.currying.js"></script> -->
     <!-- <script src="18.this.js"></script> -->
     <!-- <script src="Practice_or_Tasks/08.TodoList.js"></script> -->
-    <script src="Practice_or_Tasks/07.newPractice.js"></script>
+    <!-- <script src="Practice_or_Tasks/07.newPractice.js"></script> -->
+    <script>
+        //  function concatenate(first, last){
+        //     return first + " " + last;
+        //  }
+        //  function secondFunction(){
+        //     let result = concatenate('John', 'Doe');
+        //     document.write(result);
+        //  }
+
+        // let person = {
+        //     firstName: "AmjadPasha",
+        //     lastName: "Mahammad",
+        // }
+
+        // function fullName(){
+        //     console.log(this);
+        //     return this.firstName + " " + this.lastName;
+        //     console.log(myName);
+        // }
+        
+        // function test(){
+        //     myName = "Amjad"
+        // }
+        // fullName();
+        // test();
+
+        // let counter = 0;
+
+        // // Function to increment counter
+        // function add() {
+        //     let input = document.getElementById("input")
+        //     counter += 1;
+        //     input.value = counter;
+        // }
+
+        // function reset(){
+        //     counter = 0;
+        //     input.value = 0;
+        // }
+
+        
+
+        // // Call add() 3 times
+        // add();
+        // console.log("The counter is: " + counter);
+        // add();
+        // console.log("The counter is: " + counter);
+        // add();
+        // console.log("The counter is: " + counter);
+
+        // let func = fullName();
+        // console.log(fullName.call(person))
+        // console.log(func.length)
+
+            //let counter1 = 0; // global
+
+            // Function to increment counter
+            // function add() {
+                
+            // }
+
+            function add(){
+                let input = document.getElementById("input")
+                let counter2 = 0;
+                counter2 += 1;
+                input.value = counter2;
+            }
+
+            // Call add() 3 times
+            //console.log("The counter is: " + counter2);
+            // add();
+            // console.log("The counter is: " + counter2);
+            // add();
+            // console.log("The counter is: " + counter2);
+            // add();
+            // console.log("The counter is: " + counter2);
+    </script>
 </body>
 </html>

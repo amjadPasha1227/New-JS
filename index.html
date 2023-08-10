@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.png" />
+    <!-- <link rel="shortcut icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet"> -->
     <title>JS Classes</title>
     <style>
         *{
@@ -49,16 +49,47 @@
             top: 2px;
             margin-left: 5px;
         } */
+
+        #para {
+            color: blue;
+        }
+
+        .para {
+            color: red;
+        }
+
+        p{
+            color: yellow;
+        }
+
+        *{
+            color: navy;
+        }
+
+        
+
     </style>
 </head>
 <body>  
-    <input list="fruits" name="fruit" id="fruit" />
+    <!-- <div id="log">fdsfdsfds</div> -->
+
+    <!-- <p class="para" id="para">Paragraph</p>
+    <b>Text</b>
+    <strong>Text</strong>
+    <mark>Text</mark>
+    <del>Text</del>
+    <ins>Text</ins>
+
+    
+    <a href="blob:https://jakearchibald.github.io/944a5fc8-fdb3-458a-91ee-cdd5964b6646" download="hal.svg">dsadasdas</a> -->
+    <div id="app"></div>
+    <!-- <input list="fruits" name="fruit" id="fruit" />
     <datalist id="fruits">
         <option value="Mango"></option>
         <option value="apple"></option>
         <option value="kiwi"></option>
         <option value="guava"></option>
-    </datalist>
+    </datalist> -->
     <!-- <div id="app">
         <button id="btn">Button</button>
     </div> -->
@@ -310,6 +341,259 @@
             // for (let code in codes) {
             //     alert(code); // 1, 41, 44, 49
             // }
+
+
+
+            // //Objects
+            // let codes = {
+            //     "1": "Germany",
+            //     "2": "France",
+            //     "3": "India"
+            // }
+
+            // let codes = ["Germany", "France", "India"]
+
+            // for (let code of Object.entries(codes)){
+            //     console.log(code);
+            // }
+
+            // let user = {
+            //     name: "Amjad",
+            //     age: 31,
+            // }
+
+            // console.log(user)
+
+            // user.isAdmin = "shdjkashdkj";
+
+            // console.log(user)
+
+            // //delete user.age
+
+            // console.log(user)
+
+            // user['like birds'] = true
+
+            // console.log(user)
+
+            // let key = "likes birds";
+            // user[key] = true
+
+            // console.log(user)
+
+            // // let key1 = prompt("What do you want to know about the user?", "name");
+            // // user[key1] = true
+            // // console.log(user)
+
+            // let key3 = "age"
+            // //user.key3 = true
+            // console.log(user.age)
+
+
+
+            // let fruit = prompt("Which fruit to buy?", "apple");
+
+            // let bag = {
+            //     [fruit]: 5, 
+            // };
+
+            // console.log(bag.apple);
+
+        //     function makeUser(name, age){
+        //         return {
+        //             name: name,
+        //             age: age
+        //             // or
+        //             // name,
+        //             // age
+        //         }
+        //     }
+        //     console.log(makeUser("Amjad", 31))
+        // // OR
+        //     let user = makeUser("Amjad", 31)
+        //     console.log(user)
+
+        // let obj = {
+        //     for: 1,
+        //     let: 2,
+        //     return: 3
+        // };
+
+        // console.log( obj["for"] + obj.let + obj.return );
+
+        // let obj1 = {
+        //     0: 1,
+        //     1: 2
+        // };
+        // console.log( obj1[0] + obj1[1])
+
+        // let message = "hello";
+        // let phrase = message;
+
+        // console.log(message);
+        // console.log(phrase);
+
+        // let user = {
+        //     name: "John"
+        // };
+        // console.log(user.name);
+        // let admin = user;
+        // admin.name = "Pete"
+        // console.log(admin.name);
+
+        // let a = {}
+        // let b = {}
+        // console.log(a == b)
+        // console.log(a === b)
+
+        // let user = {
+        //     name: "John",
+        //     age: 30
+        // };
+
+        // let clone = {};
+
+        // for (let key in user) {
+        //     clone[key] = user[key];
+        // }
+
+        // clone.name = "Pete"; 
+
+        // console.log(clone.name);
+        // console.log(user.name);
+
+
+        // console.log in html
+        // (function () {
+        //     var old = console.log;
+        //     var logger = document.getElementById('log');
+        //     console.log = function (message) {
+        //         if (typeof message == 'object') {
+        //             logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+        //         } else {
+        //             logger.innerHTML += message + '<br />';
+        //         }
+        //     }
+        // })();
+
+        // let user = { name: "John" };
+        // let admin = { name: "Admin" };
+
+        // function sayHi() {
+        //     console.log(this.name)
+        // }
+
+        // sayHi();
+        
+        
+        // a = 1;
+        // console.log("a = " + a);
+        // var a;
+        // console.log(a); // undefined if var // get error if let and const
+        // var a;
+        // console.log(a);
+        // a = 5;
+        // console.log(a);
+        //aahello();
+        // var aahello = function(){
+        //     console.log("hi");
+        // }
+        // aahello();
+        // const radius = 5;
+        // const shape = {
+        //     radius: 10,
+        //     diameter(){
+        //         return this.radius * 2;
+        //     },
+        // };
+        // console.log(shape.diameter());
+
+
+        // let str = "The quick brown fox jumps over the lazy dog";
+        // let reverseWordArr = str.split(" ").map(word => word.split("").reverse().join(""));
+        // reverseWordArr.join(" ");
+        // console.log(reverseWordArr);
+
+
+        // Interview Bit Start
+        function setup() {
+        // Write your code here.
+        }
+
+
+        
+        // Example case. 
+        document.body.innerHTML = `
+        <div class="image">
+        <img src="https://bit.ly/3lmYVna" alt="First">
+        <button class="remove">X</button>
+        </div>
+        <div class="image">
+        <img src="https://bit.ly/3flyaMj" alt="Second">
+        <button class="remove">X</button>
+        </div>`;
+
+        setup();
+
+        document.getElementsByClassName("remove")[0].click();
+        console.log(document.body.innerHTML);
+
+
+        //Solution
+
+        function setup() {
+        // Write your code here.
+
+            const removeButtons = document.getElementsByClassName("remove");
+
+            // Loop through each "remove" button
+            for (let i = 0; i < removeButtons.length; i++) {
+                // Add a click event listener to each button
+                removeButtons[i].addEventListener("click", function() {
+                // Get the parent element (the div containing the image and button) and remove it
+                this.parentElement.style.display = "none";
+                });
+            }
+        }
+
+
+        
+        // Example case. 
+        document.body.innerHTML = `
+        <div class="image">
+        <img src="https://bit.ly/3lmYVna" alt="First">
+        <button class="remove">X</button>
+        </div>
+        <div class="image">
+        <img src="https://bit.ly/3flyaMj" alt="Second">
+        <button class="remove">X</button>
+        </div>`;
+
+        setup();
+
+        //document.getElementsByClassName("remove")[0].click();
+        console.log(document.body.innerHTML);
+
+        
+
+        function formatDate(userDate) {
+            // format from M/D/YYYY to YYYYMMDD
+           let newDate = userDate.split("/");
+           const month = newDate[0];
+           const day = newDate[1];
+           const year = newDate[2];
+
+           const formattedMonth = month.length === 1 ? '0' + month : month
+
+           const formattedDay = day.length === 1 ? '0' + day : day
+
+           return farmattedDate = `${year}${formattedMonth}${formattedDay}`;
+        }
+
+        console.log(formatDate("12/31/2014"));
+        // Interview Bit End
+
+
 
     </script>
 </body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .parA{
+            border: 1px solid #eee;
+            z-index: 9;
+            height: 100px;
+            width: 100px;
+        }
+        .parB{
+            border: 1px solid #eee;
+            z-index: 99;
+            height: 100px;
+            width: 100px;
+        }
+        .parA .childA{
+            width: 10px;
+            height: 10px;
+            background: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+         .parB .childB{
+            width: 10px;
+            height: 10px;
+            background: blue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parA">
+        <div class="childA"></div>
+    </div>
+    <div class="parB">
+        <div class="childB"></div>
+    </div>
+</body>
+</html>

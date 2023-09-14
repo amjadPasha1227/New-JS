@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --font-size: 16px;
+            --background: #000;
+        }
+        .main {
+            background-color: var(--background, 0.1);
+            color: var(--primary-color, 0.5);
+            font-size: var(--font-size);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        kldlfdsklfjlds
+    </div>
+    <script>
+        // "use strict";
+        // function sum(a, b) {
+        //     return a + b;
+        // }
+
+        // console.log(sum(1, 2))
+
+        // // Arrow function
+        // const multiply = (a, b) => a * b;
+        // console.log(multiply(1, 2))
+
+        // const triple = (value) => value * 3;
+        // console.log(triple(3))
+        let str = "The quick brown fox jumps over the lazy dog";
+        let reverseWordArr = str.split(" ").map(word => word.split("").reverse().join(""));
+        str2 = reverseWordArr.toString();
+        str3 = str2.replaceAll(",", " ")
+        console.log(str3);
+        // let splittedWord = str.split(" ");
+        // console.log(splittedWord);
+        // let mappedWord = splittedWord.map(word => word.split(""));
+        // console.log(mappedWord);
+        // let reversedMappedWord = mappedWord.reverse();
+        // console.log(reversedMappedWord);
+        // let joinedreversedMappedWord = reversedMappedWord.reverse();
+        // console.log(joinedreversedMappedWord.join());
+    </script>
+</body>
+</html>

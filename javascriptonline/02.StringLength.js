@@ -23,7 +23,7 @@ function getFirstCharacter(str){
     return str[0];
 }
 
-console.log(getFirstCharacter("Noman")); // J
+console.log(getFirstCharacter("Noman")); // N
 
 function getLastCharacter(str){
     return str.at(-1);

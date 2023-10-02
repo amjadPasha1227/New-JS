@@ -72,7 +72,7 @@ console.log(sumGrades([12, 10, 13, 19])); // 54
 //////////////
 const countries = ["Netherlands", "Japan", "Mongolia"];
 
-const getDropdown = (countries) => {
+const getDropdown = countries => {
     let html = `<option value="">Please select value</option>`;    
     countries.forEach((country) => {
         html +=  `<option value="${country.toLowerCase()}">${country}</option>`

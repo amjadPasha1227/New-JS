@@ -4,15 +4,15 @@ backdrop.setAttribute('style', `background: rgba(32, 25, 44, 0.9); padding: 50px
 `)
 
 const popupWrapper = document.createElement("div");
-popupWrapper.setAttribute('style', 'background: #fdd501;display:flex;align-items:center;padding-right:20px;position:relative;font-family: Roboto, sans-serif;')
+popupWrapper.setAttribute('style', 'background: #fdd501;display:flex;align-items:center;position:relative;font-family: Roboto, sans-serif;')
 
 const popupForm = document.createElement("form");
 popupForm.setAttribute('style', `display: flex;flex-direction: column;justify-content: center;align-items: center; 
-padding: 30px;min-width:350px;`)
+padding: 30px;`)
 
 const getOff = document.createElement('span');
-getOff.textContent = 'GET 10 OFF WHEN YOU SIGN UP FOR';
-getOff.setAttribute('style', `display: flex;flex-direction: column;align-items:center;font-weight:700;font-size:18px;margin-bottom:20px;`)
+getOff.textContent = 'GET $10 OFF WHEN YOU SIGN UP FOR';
+getOff.setAttribute('style', `display: flex;flex-direction: column;align-items:center;text-align:center;font-weight:700;font-size:18px;margin-bottom:20px;`)
 const EM = document.createElement('em');
 EM.textContent = 'SAVINGS,NEWS,UPDATES AND MORE';
 EM.setAttribute('style', `font-weight:400;font-style:normal;`)
@@ -41,7 +41,7 @@ img.setAttribute('style', `width:100%;max-width:200px;min-width:200px;`);
 
 const closeBtn = document.createElement('img');
 closeBtn.src = 'https://drive.google.com/uc?export=view&id=15BxPshhPuhb2V1fxIZcNZRCBgN2HXvaH'
-closeBtn.setAttribute('style', `width:100%;max-width:18px;position:absolute;right:15px;top:15px;cursor:pointer;`);
+closeBtn.setAttribute('style', `width:100%;position:absolute;cursor:pointer;`);
 
 const button = document.createElement('button');
 button.textContent = 'sign up'
@@ -77,19 +77,15 @@ document.body.appendChild(backdrop);
 if (getCookie("popupClosed") || getCookie("popupSubmitted")) {
     backdrop.style.display = "none";
 } else {
-    
     document.addEventListener("mouseleave", function (e) {
         if (e.clientY <= 0) {
             backdrop.style.display = "flex";
         }
     });
-
-    
     setTimeout(function () {
         backdrop.style.display = "flex";
     }, 5000);
 }
-
 
 popupForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -99,12 +95,10 @@ popupForm.addEventListener("submit", function (e) {
     }
 });
 
-
 closeBtn.addEventListener("click", function () {
     setCookie("popupClosed", "true", 1);
     backdrop.style.display = "none";
 });
-
 
 function validateForm() {
     const name = inputName.value.trim();
@@ -144,3 +138,44 @@ function getCookie(name) {
     }
     return "";
 }
+
+function applyMobileStyles() {
+    img.style.display = 'none';
+    popupForm.style.minWidth = 'auto'
+    popupWrapper.style.paddingRight = '0'
+    closeBtn.style.maxWidth = '15px'
+    closeBtn.style.right = '10px'
+    closeBtn.style.top = '10px'
+    backdrop.style.display = "none";
+    setTimeout(function () {
+        backdrop.style.display = "flex";
+    }, 5000);
+}
+
+function applyDesktopStyles() {
+    img.style.display = 'block';
+    popupForm.style.minWidth = '350px'
+    popupWrapper.style.paddingRight = '20px'
+    closeBtn.style.maxWidth = '18px'
+    closeBtn.style.right = '15px'
+    closeBtn.style.top = '15px'
+    backdrop.style.display = "flex";
+}
+
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+
+if (isMobile) {
+    applyMobileStyles();
+} else {
+    applyDesktopStyles();
+}
+
+window.addEventListener("resize", () => {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (isMobile) {
+        applyMobileStyles();
+    } else {
+        applyDesktopStyles();
+    }
+});

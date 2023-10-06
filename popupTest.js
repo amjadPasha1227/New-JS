@@ -105,7 +105,7 @@ function validateForm() {
     const email = inputEmail.value.trim();
 
     if (name === "" || email === "" || !Checkbox.checked) {
-        alert("Please fill out all fields and agree to the terms.");
+        alert("Please fill out all fields and check the checkbox.");
         return false;
     }
     if (!isValidEmail(email)) {
@@ -146,10 +146,6 @@ function applyMobileStyles() {
     closeBtn.style.maxWidth = '15px'
     closeBtn.style.right = '10px'
     closeBtn.style.top = '10px'
-    backdrop.style.display = "none";
-    setTimeout(function () {
-        backdrop.style.display = "flex";
-    }, 5000);
 }
 
 function applyDesktopStyles() {
@@ -159,7 +155,6 @@ function applyDesktopStyles() {
     closeBtn.style.maxWidth = '18px'
     closeBtn.style.right = '15px'
     closeBtn.style.top = '15px'
-    backdrop.style.display = "flex";
 }
 
 const isMobile = window.matchMedia("(max-width: 768px)").matches;

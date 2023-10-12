@@ -59,7 +59,7 @@ items.length = 0;
 console.log(items); // []
 
 /// Array.splice()
-// You can also delete specific items from an array using the splice(start[, deleteCount]) method
+// You can also delete specific items from an array using the splice(start[], deleteCount]) method
 
 const items2 = ["Pen", "Paper", "Staples"];
 const deletedItem = items2.splice(0, 1); // removes one element at index 0

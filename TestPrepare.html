@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    //1. function for reverse Each word in given string
+        function reversedMappedWord(string){
+            return string.split(" ").map(word => word.split("").reverse().join("")).toString().replaceAll(",", " ");
+        }
+        console.log(reversedMappedWord("Hello World"));
+
+
+    //2. Explain Callback function
+        function performTask(taskName, callback) {
+            console.log(`Starting ${taskName}...`);
+            // Simulate some asynchronous task, like fetching data from a server
+            setTimeout(function () {
+                console.log(`${taskName} completed.`);
+                callback(); // Call the provided callback function
+            }, 2000);
+        }
+
+        function afterTaskCompletion() {
+            console.log("Callback function executed. Proceed with the next task.");
+        }
+
+        performTask("Task 1", afterTaskCompletion);
+    
+
+
+    </script>
+</body>
+</html>

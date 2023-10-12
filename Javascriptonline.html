@@ -49,6 +49,16 @@
         // console.log(reversedMappedWord);
         // let joinedreversedMappedWord = reversedMappedWord.reverse();
         // console.log(joinedreversedMappedWord.join());
+
+
+    
+        function reversedMappedWord(string){
+            return string.split(" ").map(word => word.split("").reverse().join("")).toString().replaceAll(",", " ");
+        }
+
+        console.log(reversedMappedWord("Hello World"));
+
+
     </script>
 </body>
 </html>

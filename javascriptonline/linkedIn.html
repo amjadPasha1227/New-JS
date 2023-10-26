@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //// 1.
+        let n = [1,2,3,4,5];
+        let h = n.some((x)=>{  // .some(callback) method returns true when at least one item in the array 
+            return x % 2 === 0;
+        })
+
+        console.log(h);  // true //
+        //////////////
+
+        //// 2. 
+        let x = new Set([1, 2, 2, 3, 3, 4]); // Set will remove duplicates and return Unique values
+        console.log(x.size);
+        console.log(x);
+
+        //// 3. To retum randam passwords
+        const getRandomPassword = Math.random().toString(36).slice(2);
+        console.log(getRandomPassword)
+
+        //// 4. 
+        let m = (x) => x * 2;
+        console.log([1, 2, 3].map(m));
+
+        //// 5.
+        let z = 5;
+        z = z + '3';
+        console.log(z);
+
+        //// 6.
+        let s = new Set([1, 2, 2, 3, 3, 4]);
+        s.add(5);
+        console.log(s.size);
+
+        //// 7.
+        let arr = [1, 2, 3, 4, 5];
+        let r = arr.slice();
+        r.push(6);
+        console.log(r)
+        console.log(r.length)
+        console.log(arr)
+    </script>
+</body>
+</html>
